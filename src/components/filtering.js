@@ -14,7 +14,7 @@ export function initFiltering(elements, indexes) {
           .map((name) => {
             // используйте name как значение и текстовое содержимое
             // @todo: создать и вернуть тег опции
-            const option = document.createElement('option');
+            const option = document.createElement("option");
             option.value = name;
             option.textContent = name;
             return option;
@@ -26,6 +26,6 @@ export function initFiltering(elements, indexes) {
     // @todo: #4.2 — обработать очистку поля
 
     // @todo: #4.5 — отфильтровать данные используя компаратор
-    return data.filter(row => compare(row, state));
+    return data.filter((row) => compare(row, state));
   };
 }
